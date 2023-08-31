@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform::transition</title>
+    <style>
+      .container {
+        width: 80%;
+        margin: 10px auto;
+      }
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(55, 255, 5, 0.582);
+        border: 1px solid #000;
+        /* transition-property: all; */
+        /* transition-duration: 2s; */
+        /* transition-timing-function: ease; */
+        /* transition-delay: 1s; */
+        /* transition: (property) (duration) (transition-timing-function) (transition-delay); */
+        transition: all 2s ease 1s;
+      }
+      #box:hover {
+        transform: translateX(200px);
+        background-color: aquamarine;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Hover!</h3>
+      <div id="box"></div>
+    </div>
+  </body>
+</html>

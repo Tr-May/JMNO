@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile-First RWD</title>
+    <style>
+      /* This applies from 0px to 768px  */
+      body {
+        background-color: blue;
+      }
+
+      /* This applies from 768px to 971px */
+      @media screen and (min-width: 768px) {
+        body {
+          background-color: green;
+        }
+      }
+
+      /* This applies from 972px to 1199px*/
+
+      @media screen and (min-width: 972px) {
+        body {
+          background-color: orange;
+        }
+      }
+
+      /* This applies from 1200px onwards  */
+      @media screen and (min-width: 1200px) {
+        body {
+          background-color: brown;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
